@@ -11,6 +11,6 @@ NOTE:
 if you localhost run to XAMPP page it's because there's index inside htdocs you can just delete it or change it's name
 or you can just localhost/projectname on you browser
 
-for add and update bot command on you search type after index "/admin" and it will to place where you can edit delete and add the bot command
+for add and update bot command on you search bar after "chatbot" type "/admin" and it will to place where you can edit delete and add the bot command
 
 eoy
