@@ -37,9 +37,6 @@
       }
     }
 
-    //ESCAPE IF FIELD CONTAIN SPECIAL CHARACTER
-    
-
     //TRY TO UPDATE QUESTION
     $SQL = " UPDATE `question` SET `id_massage` = '$MassageID', `question` = '$question' WHERE `id_question` = ? ";
     $stmt = $mysqli->prepare( $SQL );
@@ -253,6 +250,22 @@
       echo $massage;
     }
   }
- 
 
- 
+  function openPage($page){
+    if ( !isset($page) ){
+      header( "location: index.php?page=list" );
+      return false;
+    }
+
+    switch( $page ){
+      case "list":
+          include "list.php";
+      break;
+      case "create":
+          include "create.php";
+      break;
+      case "update":
+          include "update.php";
+      break;
+  }
+  }
